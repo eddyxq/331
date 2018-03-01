@@ -1,5 +1,5 @@
 /**
- * This is a a generic singly linked list class 
+ * This is a generic singly linked list class 
  * @author Eddy Qiang - CPSC 331 - T03
  * @version 1.0
  * @since February 28, 2018
