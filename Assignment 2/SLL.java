@@ -88,17 +88,20 @@ public class SLL<T> {
 	{	
 		SLLNode<T> a = list1.head;
 		SLLNode<T> b = list2.head;
-		
+		// when neither list is empty, iterate through
 		while (a != null && b != null)
 		{	
+			// when a < b, a goes to next node
 			if (a.info.compareTo(b.info) < 0)
 			{
 				a = a.next;
 			}
+			// when a > b, b goes to next node
 			else if (a.info.compareTo(b.info) > 0)
 			{
 				b = b.next;
 			}
+			// when a = b, add a or b (in this case I choose a) to result and advance both a and b to next node
 			else
 			{
 				result.addToTail(a.info);
