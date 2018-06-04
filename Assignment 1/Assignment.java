@@ -45,18 +45,18 @@ public class Assignment
 	                nextNode = currentNode.next;
                 }
             }
-            //reconstruct the singly linked list with sorted nodes
-            list = new SLL<T>();           
-            for(int i = 0; i<size; i++)
-            {
-            	list.addToTail(head.info);
-            	head=head.next;
-            }
-            //display results
-            System.out.print("Sorted  : ");
-            list.printAll();     
-            System.out.println();
         }
+		//reconstruct the singly linked list with sorted nodes
+        list = new SLL<T>();           
+        for(int i = 0; i<size; i++)
+        {
+        	list.addToTail(head.info);
+        	head=head.next;
+        }
+        //display results
+        System.out.print("Sorted  : ");
+        list.printAll();     
+        System.out.println();
 	}  
 	//tests to see if program works
 	public static void main(String[] args)
